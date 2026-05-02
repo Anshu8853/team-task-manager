@@ -27,7 +27,8 @@ export async function POST(request: Request) {
     const response = NextResponse.json({ user: sessionUser });
     response.cookies.set(authCookieOptions(token));
     return response;
-  } catch {
+  } catch (error) {
+    console.error("Login error:", error);
     return NextResponse.json({ message: "Could not sign in" }, { status: 500 });
   }
 }

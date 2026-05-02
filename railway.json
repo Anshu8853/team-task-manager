@@ -3,7 +3,7 @@
     "builder": "nixpacks"
   },
   "deploy": {
-    "startCommand": "next start",
+    "startCommand": "npm run start",
     "restartPolicyType": "on_failure",
     "restartPolicyMaxRetries": 5
   }
