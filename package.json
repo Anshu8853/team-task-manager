@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "prisma db push && node prisma/seed.js && next start",
+    "start": "node scripts/start.mjs",
+    "start:server": "next start",
     "lint": "eslint .",
     "db:push": "prisma db push",
     "db:seed": "node prisma/seed.js",
